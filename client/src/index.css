@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f0f0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.products-app>h1 {
+  margin: 16px;
+  font-size: 1.75rem;
+  line-height: 2rem;
+  font-weight: 500;
+  letter-spacing: .0125em;
+  text-decoration: inherit;
+  text-transform: inherit;
+  margin-top: 0;
+}
+.new-product {
+  padding: 16px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0,0,0,.12);
+  box-sizing: border-box;
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.new-product .title {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 500;
+  letter-spacing: .0125em;
+  width: 40rem;
+  border: none;
+  border-bottom: 1px solid #555;
+  margin-bottom: 8px;
+
+}
+.new-product .content {
+  font-size: .875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  letter-spacing: .0178571429em;
+  text-decoration: inherit;
+  text-transform: inherit;
+  opacity: .6;
+  border: 1px solid #555;
+  width: 100%;
+  margin-bottom: 8px;
+}
+.new-product button {
+  align-self: flex-end;
+}
+
+.products {
+  padding: 16px;
+}
+
+.products .product {
+  padding: 16px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0,0,0,.12);
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+.products .product h1 {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 500;
+  letter-spacing: .0125em;
+  text-decoration: inherit;
+  text-transform: inherit;
+  margin-top: 0;
+}
+.products .product p {
+  font-size: .875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  letter-spacing: .0178571429em;
+  text-decoration: inherit;
+  text-transform: inherit;
+  opacity: .6;
+}
+.error-message {
+  font-size: 1.2rem;
+  color: red;
+  font-weight: bold;
+  font-family: monospace;
+  padding: 16px;
+  background-color: white;
+}
+.hidden-error-message {
+  display: none;
+}
