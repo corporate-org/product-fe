@@ -9,8 +9,9 @@ This package is intended to be used with the `product-be` package.
 ## Configuration
 
 The app accepts database configuration via these enviornmental variables:
+
 | Variable | Description |
-|--|--|
+|---|---|
 | `PRODUCT_BE_SERVER_URL` | The URL to access the `product-be` service. |
 | `PORT` | The port number the server should be exposed on. It defaults to `8080`. |
 
