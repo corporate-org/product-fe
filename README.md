@@ -5,6 +5,7 @@ This is a product listing front-end. It is made up of two parts: a client packag
 package. The client package is a React app and is served from `/`. The server package acts as an API gateway and forwards api requests from the client on the `/api` endpoint to the base url specified by the `PRODUCT_BE_SERVER_URL` environment variable.
 
 This package is intended to be used with the `product-be` package.
+![Product Listing Architecture](docs/architecture.png)
 
 ## Configuration
 
