@@ -61,9 +61,9 @@ export class ProductCreator extends React.Component {
   render() {
     return (
       <div className="new-product">
-        <input className="title" type="text" placeholder="Product name" value={this.state.title} onChange={this.handleTitleChange} />
-        <textarea className="content" placeholder="Enter your product description here..." value={this.state.content} onChange={this.handleContentChange}></textarea>
-        <button onClick={this.handleSubmit}>Post Product</button>
+        <input className="title" type="text" placeholder="Task name" value={this.state.title} onChange={this.handleTitleChange} />
+        <textarea className="content" placeholder="Enter your task here..." value={this.state.content} onChange={this.handleContentChange}></textarea>
+        <button onClick={this.handleSubmit}>Post Task</button>
       </div>
     );
   }
