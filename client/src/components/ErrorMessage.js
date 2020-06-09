@@ -10,7 +10,7 @@ export function ErrorMessage(props) {
 
         <li>In your sample-service configuration, add a <span className="bold">database</span>.</li>
 
-        <li>In <span className="bold">Variables</span>, define an environment variable for your database connection with a key <span className="highlight">CONNECTION_STRING</span> and value: <span className="highlight">{'${externals.postgres.host};${externals.postgres.name};${externals.postgres.username};${externals.postgres.password}'}</span></li>
+        <li>In <span className="bold">Variables</span>, define an environment variable for your database connection with a key <span className="highlight">CONNECTION_STRING</span> and value: <span className="highlight">{'postgresql://${externals.postgres.username}:${externals.postgres.password}@${externals.postgres.host}:${externals.postgres.port}/${externals.postgres.name}'}</span></li>
 
         <li>Deploy your changes and reload this page</li>
       </ul>
