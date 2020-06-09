@@ -14,7 +14,7 @@ You can configure the product frontend with the following environment variables:
 
 | Variable | Description |
 |---|---|
-| `PRODUCT_BE_SERVER_URL` | The URL for accessing the `product-be` service. |
+| `PUBLIC_SERVER_URL` | The URL for accessing the `product-be` service. |
 | `PORT` | The port number where the server should be exposed. Default is `8080`. |
 
 
@@ -25,7 +25,7 @@ You can run the `product-fe` package in development mode by executing the follow
 ```bash
 # Start the server
 $ cd server
-$ PRODUCT_BE_SERVER_URL="http://localhost:8080" PORT=3001 node bin/www
+$ PUBLIC_SERVER_URL="http://localhost:8080" PORT=3001 node bin/www
 ```
 
 ```bash
