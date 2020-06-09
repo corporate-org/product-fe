@@ -5,8 +5,7 @@ const path = require("path");
 const logger = require("morgan");
 
 // Environmental variable for configuring backend
-const PRODUCT_BE_SERVER_URL=process.env.PRODUCT_BE_SERVER_URL || "PRODUCT_BE_SERVER_URL";
-
+const PUBLIC_SERVER_URL=process.env.PUBLIC_SERVER_URL || "http://sample-service:8080";
 
 const app = express();
 
@@ -16,7 +15,7 @@ app.use(express.json());
 
 app.use(express.static(path.join(__dirname, "public")));
 
-app.use("/api", proxy(PRODUCT_BE_SERVER_URL));
+app.use("/api", proxy(PUBLIC_SERVER_URL));
 
 app.use("/", express.static("public"));
 
@@ -30,7 +29,7 @@ app.use(function(err, req, res, next) {
   if (req.path.startsWith("/api/")) {
     // error from Proxy
     const proxiedPath = req.path.substring("/api/".length);
-    console.error(`Unable to complete request: "${PRODUCT_BE_SERVER_URL}/${proxiedPath}"`);
+    console.error(`Unable to complete request: "${PUBLIC_SERVER_URL}/${proxiedPath}"`);
     if (err.code === "ENOTFOUND") {
       console.error(`Unable to find host "${err.host}"`);
     } else if (err.code === "ECONNREFUSED") {

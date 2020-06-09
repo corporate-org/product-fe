@@ -1,0 +1,19 @@
+name: Walhall CI
+
+on:
+  push:
+    branches: 
+      - deploy
+
+jobs:
+  push-to-humanitec-dev:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Build and Push to Humanitec Dev
+      uses: humanitec/build-push-to-humanitec@v1
+      with:
+        humanitec-token: ${{ secrets.HUMANITEC_TOKEN_DEV }}
+        organization: damien85
+        humanitec-registry: dev-registry.humanitec.io
+        humanitec-api:  dev-api.humanitec.io
